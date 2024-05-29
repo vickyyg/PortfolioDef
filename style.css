@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+     background: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+    background-image: url(); /* cuando tenga una foto mia para poner */
+    background-size: cover;
+    background-position: center;
+}
+
+.container-1{
+    padding: 2px 2%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.logo{
+    width: 60px;
+    margin-top: 10px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+    
+}
+
+nav ul li a{
+    color: white;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(221, 119, 191);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 17%;
+    
+}
+
+.header-text h1{
+    font-size: 60px;
+   
+}
+
+.header-text h1 span{
+    color:  rgb(221, 119, 191);
+}
+
+/* about */
+
+#about {
+    width: 100%;
+    margin-top: 247px;
+}
+
+.container-2 {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container-2 p{
+    padding-top: 20px;
+}
+
+
+
+
+/* portfolio */
+
+#portfolio{
+    padding: 10px 0;
+    margin-top: 90px;
+}
+
+.subtitle{
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(221, 119, 191);
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    width: 100%; /* Asegura que ocupe el ancho disponible */
+    max-width: 400px; /* Ancho máximo para mantener proporción */
+    margin: 0 auto; /* Centra los elementos */
+}
+
+.work img{
+    border-radius: 10px;
+    margin: 20px;
+    height: 220px;
+    width: 90%;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+
+.layer{
+    width:100%;
+    height: 0;
+    background: linear-gradient(rgb(0,0,0,0.6), rgb(221, 119, 191));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.8s;
+}
+
+.layer a img{
+    width: 30px;
+    height: 30px;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+/* contact */
+
+#contact {
+    padding: 70px 0;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+}
+
+.container-4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    margin-left: 40px;
+    margin-top: 0; 
+   
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+
+.contact-left p{
+    margin-top: 20px;
+}
+
+.contact-left p i{
+    margin-right: 10px;
+    font-size: 15px;
+    color: rgb(221, 119, 191);
+
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(94, 95, 97);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: rgb(221, 119, 191);
+    transform: translateY(-5px);
+}
+
+.btn{
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    border: 1px;
+    background: rgb(221, 119, 191);
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(54, 51, 51);
+    padding: 10px;
+    margin: 10px 0;
+    color: rgb(170, 164, 164);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+nav .fas{
+    display: none;
+}
+
+#msg{
+    color: rgb(119, 122, 124);
+    margin-top: 15px;
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #header{
+         background-image: url(); /*foto tamaño para celular */
+    }
+    .logo{
+        width: 40px;
+    }
+
+    .header-text{
+        margin-top: 80%;
+        font-size: 10px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: rgb(221, 119, 191);
+    }
+
+    nav ul{
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+}
+
+/* about */
+
+@media screen and (max-width: 600px) {
+
+    .subtitle{
+        font-size: 40px;
+    }
+    .container-2 {
+       
+        padding: 10px;
+        flex-basis: 100%;
+    }
+
+    .container-2 p{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .container-2 h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .container-2 h1, .container-2 h2, .container-2 p {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .work-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+        margin-left: 0; /* Ajusta el margen */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #portfolio{
+        padding-top: 100px;
+        
+    }
+    .work-list {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+
+    .work {
+        margin-bottom: 20px; /* Añade espacio entre elementos */
+        padding: 10px;
+    }
+
+    .subtitle {
+        font-size: 30px; /* Ajusta el tamaño del subtítulo en pantallas pequeñas */
+    }
+
+    .work img {
+        margin: 10px auto; /* Ajusta el margen para centrar imágenes */
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .layer {
+        padding: 0; /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    .layer h3 {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .layer p {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        padding: 5px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+
+
+/* contact */
+
+@media only screen and (max-width: 768px) {
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Los elementos ocupan el ancho completo */
+        margin-left: 0; /* Quita el margen adicional en pantallas pequeñas */
+    }
+
+    .contact-left {
+        text-align: center; /* Centra el contenido de la sección izquierda */
+    }
+
+    .contact-right {
+        margin-top: 20px; /* Añade espacio entre las secciones en pantallas pequeñas */
+    }
+
+    .btn {
+        width: 100%; /* El botón ocupa todo el ancho disponible */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #contact{
+        padding-top: 10px;
+    }
+    .subtitle {
+        font-size: 40px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+

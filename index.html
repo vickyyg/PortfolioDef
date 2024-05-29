@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container-1">
+            <nav>
+                <img src="img/logo1.png" alt="" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hola, soy <span>Victoria</span></h1>
+                <p>Desarrolladora Web de Buenos Aires, Argentina.<p>
+                   <p>Creo sitios web personalizados.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container-2">
+            <h1 class="subtitle">About</h1>
+            <h2><i class="fas fa-circle-dot"></i>Desarrolladora web Frontend</h2>
+            <p>Mi nombre es Nicolás del Castillo. Soy un desarrollador apasionado por la tecnología con grandes habilidades en desarrollo web. Me apasiona crear diseños llamativos que capten la atención de los usuarios.</p>
+
+                <p>Cuento con sólidos conocimientos como diseñador gráfico y más de 2 años de experiencia en HTML5, CSS3 y Javascript. Esto me permite personalizar y ajustar plantillas usando WordPress Elementor para adaptarlas a las necesidades de cada proyecto.</p>
+                
+                <p>Habilidades duras: HTML5, CSS3, Javascript, React.Js, Git, Bootstrap, Php, MySQL.
+                Habilidades blandas: organizado, creativo, autodidacta, curioso, resolutivo y ordenado.</p>
+            
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container-3">
+            <h1 class="subtitle">Proyectos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/screen1.png" alt=""/>
+                    <div class="layer">
+                        <h3>Food App</h3>
+                        <p>Este proyecto es una aplicacion para pedir comida. </p>
+                        <a href="https://fastdelapp.netlify.app/" target="_blank"><img src="img/link.png" alt="Link image"/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/screen2.png" alt=""/>
+                    <div class="layer">
+                        <h3>Gemini Clone</h3>
+                        <p>Este proyecto es un clon de la famosa IA de Google, hecha con API.</p>
+                        <a href="https://geminiclone1234.netlify.app/" target="_blank"><img src="img/link.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/screen3.png" alt=""/>
+                    <div class="layer">
+                        <h3>Pantalones Rotos</h3>
+                        <p>Este proyecto es un sitio web para una banda de puck llamada "Pantalones Rotos" </p>
+                        <a href="https://pantalonesrotos.netlify.app/" target="_blank"><img src="img/link.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/screen4.png" alt=""/>
+                    <div class="layer">
+                        <h3>Visite Sweden</h3>
+                        <p>Este es un proyecto de una web de turismo para Suecia.</p>
+                        <a href="https://swedensite.netlify.app/" target="_blank"><img src="img/link.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/screen5.png" alt=""/>
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Este proyecto es una App para saber el clima de cualquier parte del mundo. </p>
+                        <a href="https://weatherappreactjs123.netlify.app/" target="_blank"><img src="img/link.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    
+    <div id="contact">
+        <div class="container-4">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle sub1">Contacto</h1>
+                    <p><i class="fas fa-paper-plane"></i>viicjygaida@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/victoria-gaida-9118a723b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/vickyyg" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <button class="btn">Descargar cv</button>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Nombre" required>
+                        <input type="email" name="Email" placeholder="Email" required/>
+                        <textarea name="Message" rows="6" placeholder="Tu mensaje" ></textarea>
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                    <id id="msg"></id>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+        
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuaauFAxped9kEHKNdDyqdb0KeYzS_6dye1YRuEPaJkRvZtv9K1x8PWWKFrtzMfdwm/exec';
+  
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = 'Mensaje enviado';
+          setTimeout(() => { msg.innerHTML = ''; }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+    
+</body>
+</html>
