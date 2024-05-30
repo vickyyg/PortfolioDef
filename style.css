@@ -98,6 +98,32 @@ nav ul li a:hover::after{
     padding-top: 20px;
 }
 
+.description {
+    list-style: none; /* Elimina el estilo predeterminado de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin-top: 20px; /* Elimina el margen de la lista */
+}
+
+.description li {
+    margin-bottom: 1px; /* Ajusta este valor según tus necesidades */
+    padding: 0; /* Elimina el relleno si no es necesario */
+    text-align: left;
+}
+
+.dot1{
+    color:  rgb(221, 119, 191);
+    font-size: 40px;
+
+}
+
+.dot{
+    color:  rgb(221, 119, 191);
+    font-size: 20px;
+    margin-right: 5px;
+    
+    
+}
+
 
 
 
