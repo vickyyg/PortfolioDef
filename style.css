@@ -62,11 +62,11 @@ nav ul li a:hover::after {
 }
 .header-text {
     width: 60%;
-    padding: 20px;
+    padding: 25px;
 }
 
 .header-text h1 {
-    font-size: 75px;
+    font-size: 70px;
 }
 .header-text h1 span {
     color: rgb(221, 119, 191);
@@ -75,11 +75,10 @@ nav ul li a:hover::after {
     font-size: 20px;
 } 
 
-
 .header-images {
     width: 40%;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .header-images ul {
     display: flex;
@@ -407,10 +406,10 @@ nav .fas{
         width: 100%;
     }
     .header-text h1 {
-        font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+        font-size: 24px; 
     }
     .header-text p {
-        font-size: 16px; /* Ajusta también el tamaño de los párrafos si es necesario */
+        font-size: 16px; 
     }
 
     .header-images {
@@ -419,7 +418,7 @@ nav .fas{
     }
     .header-images ul {
         justify-content: center;
-        margin-left: 10px;
+        margin-left: 24px;
     }
     .header-images li {
         width: 20px;
@@ -427,25 +426,7 @@ nav .fas{
 }
 
 
-/* Estilos para tablets y dispositivos móviles grandes */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        text-align: center;
-    }
-    .header-text {
-        width: 100%;
-    }
-    .header-images {
-        width: 100%;
-        margin-top: 20px;
-    }
-    .header-images ul {
-        justify-content: center;
-    }
-}
+
 
 /* Estilos para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -453,22 +434,6 @@ nav .fas{
         flex-direction: row;
         align-items: center;
         margin-left: 0;
-        text-align: left;
-    }
-    .header-text {
-        width: 60%;
-    }
-    .header-images {
-        width: 35%;
-    }
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 1025px) {
-    .header-content {
-        flex-direction: row;
-        align-items: center;
-        margin-left: 100px;
         text-align: left;
     }
     .header-text {
