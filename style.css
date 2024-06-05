@@ -394,6 +394,94 @@ nav .fas{
     display: block;
 }
 
+/* Estilos para dispositivos móviles pequeños */
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-text {
+        margin-top: 80%;
+        margin-left: 15px;
+        width: 100%;
+    }
+    .header-text h1 {
+        font-size: 24px; /* Ajusta el tamaño según tus necesidades */
+    }
+    .header-text p {
+        font-size: 16px; /* Ajusta también el tamaño de los párrafos si es necesario */
+    }
+
+    .header-images {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .header-images ul {
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .header-images li {
+        width: 20px;
+    }
+}
+
+
+/* Estilos para tablets y dispositivos móviles grandes */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+    }
+    .header-text {
+        width: 100%;
+    }
+    .header-images {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .header-images ul {
+        justify-content: center;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        text-align: left;
+    }
+    .header-text {
+        width: 60%;
+    }
+    .header-images {
+        width: 35%;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 100px;
+        text-align: left;
+    }
+    .header-text {
+        width: 60%;
+    }
+    .header-images {
+        width: 35%;
+    }
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .logo{
