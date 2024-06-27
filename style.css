@@ -393,7 +393,7 @@ nav .fas{
     display: block;
 }
 
-/* Estilos para dispositivos móviles pequeños */
+
 @media (max-width: 480px) {
     .header-content {
         flex-direction: column;
